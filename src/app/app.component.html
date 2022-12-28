@@ -1,4 +1,13 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Start editing to see some magic happen :)</p>
+<br />
+<button (click)="currentProgress = currentProgress - 1">- ProgressBar</button>
+<button (click)="currentProgress = currentProgress + 1">+ ProgressBar</button>
+
+<br />
+<progress-bar></progress-bar>
+<br />
+<progress-bar
+  [progress]="currentProgress"
+  [progressColor]="'dodgerblue'"
+></progress-bar>
